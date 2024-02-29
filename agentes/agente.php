@@ -53,7 +53,7 @@ if(isset($_GET['uuid']) && !empty($_GET['uuid'])) {
     echo "<img src='$imagen' alt='$nombre'>";
     echo "<p>$descripcion</p>";
 
-    // Mostrar información del rol en una tabla
+    // Mostrar información del rol tabla
     echo "<h2>Rol</h2>";
     echo "<table>";
     echo "<tr><th>Nombre</th><th>Imagen</th><th>Descripción</th></tr>";
@@ -64,7 +64,7 @@ if(isset($_GET['uuid']) && !empty($_GET['uuid'])) {
     echo "</tr>";
     echo "</table>";
 
-    // Mostrar habilidades en una tabla
+    // Mostrar habilidades tabla
     echo "<h2>Habilidades</h2>";
     echo "<table>";
     echo "<tr><th>Nombre</th><th>Imagen</th><th>Descripción</th></tr>";
