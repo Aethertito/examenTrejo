@@ -1,15 +1,18 @@
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #333;
+    background-color: #dc3d4b;
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
   }
+  body {
+    background-color: #ffffff;
+  }
   
   .navbar-brand,
   .navbar-link {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     padding: 5px 10px;
   }
@@ -29,7 +32,7 @@
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #dc3d4b;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Alineación del texto al centro */
