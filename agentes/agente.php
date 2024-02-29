@@ -23,18 +23,21 @@
   // Código PHP para mostrar la información del agente
   if(isset($_GET['uuid']) && !empty($_GET['uuid'])) {
     $uuid = $_GET['uuid'];
-    $url = "https://valorant-api.com/v1/agents/$uuid";
+    $url = "https://valorant-api.com/v1/weapons/$uuid";
     $response = file_get_contents($url);
     $data = json_decode($response, true);
     
     if(isset($data['data']) && !empty($data['data'])) {
       $nombre = $data['data']['displayName'];
-      $descripcion = $data['data']['description'];
-      $imagen = $data['data']['fullPortrait'];
+      $categoria = $data['data']['category'];
+      $imagen = $data['data']['displayIcon'];
+      
 
+      /*
       echo "<h1>$nombre</h1>";
       echo "<img src='$imagen' alt='$nombre'>";
       echo "<p>$descripcion</p>";
+      */
     } else {
       echo "<p>No se encontró información para el agente con UUID: $uuid</p>";
     }
